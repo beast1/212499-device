@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс Каталог</title>
+  </head>
+  <body>
+      <header class="page-header">
+          <div class="header-controls">
+              <div class="logo">
+                  <img src="http://placehold.it/150x100" alt="" width="" height="">
+              </div>
+              <form class="search" action="#" method="get">
+                  <input type="search" name="search" placeholder="Поиск по сайту">
+              </form>
+              <a href="#">Валентин Петухов</a>
+              <button type="button">Выйти</button>
+              <button type="button">Сравнить</button>
+              <button type="button">Корзина</button>
+          </div>
+          <nav class="header-menu">
+              <ul>
+                  <li>
+                      <a href="#">Каталог товаров</a>
+                      <table class="catalog-sub-menu">
+                          <tr>
+                              <td><a href="#">Виртуальная реальность</a></td>
+                              <td><a href="#"></a>Моноподы для селфи</td>
+                              <td><a href="#">Экшн-камера</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#"></a>Фитнесс-браслеты</td>
+                              <td><a href="#"></a>Умные часы</td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Моноподы для селфи</a></td>
+                          </tr>
+                      </table>
+                  </li>
+                  <li><a href="#"></a>Доставка</li>
+                  <li><a href="#"></a>Гарантия</li>
+                  <li><a href="#"></a>Контакты</li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <h1>Моноподы для селфи</h1>
+          <div class="breadcrumbs">
+              <a href="#">Главная</a>
+              <a href="#">Каталог товаров</a>
+              <a>Моноподы для селфи</a>
+          </div>
+          <form class="catalog-controls" action="#" method="get">
+              <b>Фильтр:</b>
+              <fieldset>
+                  <legend>Цена</legend>
+                  <input type="range" min="0" max="5000" step="100">
+              </fieldset>
+              <fieldset>
+                  <legend>Цвет</legend>
+                  <input type="checkbox" name="black" id="cbx-1" checked>
+                  <label for="cbx-1">Черный</label>
+                  
+                  <input type="checkbox" name="white" id="cbx-2">
+                  <label for="cbx-2">Белый</label>
+                  
+                  <input type="checkbox" name="blue" id="cbx-3" checked>
+                  <label for="cbx-3">Синий</label>
+                  
+                  <input type="checkbox" name="red" id="cbx-4" checked>
+                  <label for="cbx-4">Красный</label>
+                  
+                  <input type="checkbox" name="pink" id="cbx-5">
+                  <label for="cbx-5">Розовый</label>
+              </fieldset>
+              <fieldset>
+                  <legend>Bluetooth</legend>
+                  <input type="radio" name="true" id="rbtn-1" checked>
+                  <label for="rbtn-1">Есть</label>
+                  
+                  <input type="radio" name="false" id="rbtn-2">
+                  <label for="rbtn-2">Нет</label>
+              </fieldset>
+              <button class="btn" type="submit">Показать</button>
+          </form>
+          <div class="catalog-main">
+              <div class="sort">
+                  <b>Сортировка:</b>
+                  <input type="radio" name="sort-type" id="rbtn-3" checked>
+                  <label for="rbtn-">По цене</label>
+                  
+                  <input type="radio" name="sort-type" id="rbtn-4">
+                  <label for="rbtn-4">По типу</label>
+                  
+                  <input type="radio" name="sort-type" id="rbtn-5">
+                  <label for="rbtn-5">По популярности</label>
+                  
+                  <input type="radio" name="sort-direct" id="rbtn-6" checked>
+                  <label for="rbtn-6"></label>
+                  
+                  <input type="radio" name="sort-direct" id="rbtn-7">
+                  <label for="rbtn-7"></label>
+              </div>
+              <div class="catalog-items">
+                  <div class="catalog-item">
+                      <img src="http://placehold.it/150x100" alt="" width="" height="">
+                      <i>Любительская селфи-палка</i>
+                      <b>500 руб.</b>
+                      <button class="btn" type="button">В корзину</button>
+                      <button type="button">Добавить к сравнению</button>
+                  </div>
+                  
+                  <div class="catalog-item">
+                      <img src="http://placehold.it/150x100" alt="" width="" height="">
+                      <i>Профессиональная селфи-палка</i>
+                      <b>1 500 руб.</b>
+                      <button class="btn" type="button">В корзину</button>
+                      <button type="button">Добавить к сравнению</button>
+                  </div>
+                  
+                  <div class="catalog-item">
+                      <img src="http://placehold.it/150x100" alt="" width="" height="">
+                      <i>Непотопляемая селфи-палка</i>
+                      <b>2 500 руб.</b>
+                      <button class="btn" type="button">В корзину</button>
+                      <button type="button">Добавить к сравнению</button>
+                  </div>
+                  
+                  <div class="catalog-item">
+                      <b class="index"></b>
+                      <img src="http://placehold.it/150x100" alt="" width="" height="">
+                      <i>Селфи-палка "Следуй за мной"</i>
+                      <b>4 900 руб.</b>
+                      <button class="btn" type="button">В корзину</button>
+                      <button type="button">Добавить к сравнению</button>
+                  </div>
+              </div>
+              <div class="peginator">
+                  <a class="prev" href="#">Назад</a>
+                  <a href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a class="next" href="#">Вперед</a>
+              </div>
+          </div>
+      </main>
+      <footer class="page-footer">
+          <div class="footer-controls">
+              <div class="logo">
+                  <img src="http://placehold.it/150x100" alt="" width="" height="">
+              </div>
+              <button type="button">Выйти</button>
+              <button type="button">Сравнить</button>
+              <button type="button">Корзина</button>
+          </div>
+          <p>г. Москва, ул. Строителей, 15</p>
+          <nav class="footer-menu">
+              <ul>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="#">Контакты</a></li>
+              </ul>
+          </nav>
+          <p>Тел.: +7 (495) 495-95-95</p>
+          <div class="footer-social">
+              <a class="social-btn" href="#">Фейсбук</a>
+              <a class="social-btn" href="#">Инстаграмм</a>
+              <a class="social-btn" href="#">Твиттер</a>
+          </div>
+          <img src="http://placehold.it/150x100" alt="" width="" height="">
+      </footer>
+  </body>
+</html>
